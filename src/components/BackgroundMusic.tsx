@@ -32,7 +32,7 @@ const BackgroundMusic = ({ isPlaying }: BackgroundMusicProps) => {
       <audio
         ref={audioRef}
         loop
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        src="/audio/I_Think_They_Call_This_Love_Cover.mp3"
       />
       
       {/* Mute toggle button */}
