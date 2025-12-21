@@ -25,12 +25,14 @@ const Index = () => {
         <LandingScreen onStart={handleStart} isExiting={isExiting} />
       )}
 
+      {/* Background Music - always rendered to preload audio */}
+      <BackgroundMusic isPlaying={hasStarted} />
+
       {/* Main Experience */}
       {hasStarted && (
         <>
           <PhotoCarousel />
           <TextSequence />
-          <BackgroundMusic isPlaying={hasStarted} />
         </>
       )}
     </main>

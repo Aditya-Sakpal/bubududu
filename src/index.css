@@ -119,11 +119,11 @@
 }
 
 .animate-scroll-down {
-  animation: scroll-down 40s linear infinite;
+  animation: scroll-down 80s linear infinite;
 }
 
 .animate-scroll-up {
-  animation: scroll-up 40s linear infinite;
+  animation: scroll-up 80s linear infinite;
 }
 
 /* Text fade animation */
@@ -147,7 +147,23 @@
 }
 
 .animate-text-sequence {
-  animation: text-fade-in 8s ease-in-out forwards;
+  animation: text-fade-in 16s ease-in-out forwards;
+}
+
+/* Text fade in and stay (for final message) */
+@keyframes text-fade-in-stay {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text-fade-in-stay {
+  animation: text-fade-in-stay 1.5s ease-out forwards;
 }
 
 /* Landing button pulse */
