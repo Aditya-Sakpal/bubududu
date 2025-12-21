@@ -1,13 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import LandingScreen from "@/components/LandingScreen";
+import PhotoCarousel from "@/components/PhotoCarousel";
+import TextSequence from "@/components/TextSequence";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 const Index = () => {
+  const [hasStarted, setHasStarted] = useState(false);
+  const [isExiting, setIsExiting] = useState(false);
+
+  const handleStart = () => {
+    setIsExiting(true);
+    setTimeout(() => {
+      setHasStarted(true);
+    }, 1000);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="relative min-h-screen w-full overflow-hidden bg-background">
+      {/* SEO */}
+      <h1 className="sr-only">Happy Birthday Shemdu - A Love Letter</h1>
+
+      {/* Landing Screen */}
+      {!hasStarted && (
+        <LandingScreen onStart={handleStart} isExiting={isExiting} />
+      )}
+
+      {/* Main Experience */}
+      {hasStarted && (
+        <>
+          <PhotoCarousel />
+          <TextSequence />
+          <BackgroundMusic isPlaying={hasStarted} />
+        </>
+      )}
+    </main>
   );
 };
 
