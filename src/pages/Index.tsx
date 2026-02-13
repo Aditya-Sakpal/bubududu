@@ -18,7 +18,7 @@ const Index = () => {
   return (
     <main className="relative min-h-screen w-full overflow-hidden bg-background">
       {/* SEO */}
-      <h1 className="sr-only">Happy Birthday Shemdu - A Love Letter</h1>
+      <h1 className="sr-only">Happy Valentine's Day Shemdu</h1>
 
       {/* Landing Screen */}
       {!hasStarted && (

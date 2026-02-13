@@ -1,22 +1,20 @@
 import { useMemo } from "react";
 
-import photo1 from "@/assets/photo-1.png";
-import photo2 from "@/assets/photo-2.png";
-import photo3 from "@/assets/photo-3.png";
-import photo4 from "@/assets/photo-4.png";
-import photo5 from "@/assets/photo-5.png";
-import photo6 from "@/assets/photo-6.png";
-import photo7 from "@/assets/photo-7.png";
-import photo8 from "@/assets/photo-8.png";
-import photo9 from "@/assets/photo-9.png";
-import photo10 from "@/assets/photo-10.png";
-import photo11 from "@/assets/photo-11.png";
-import photo12 from "@/assets/photo-12.png";
-import photo13 from "@/assets/photo-13.png";
-import photo14 from "@/assets/photo-14.png";
-import photo15 from "@/assets/photo-15.png";
+import img1 from "@/assets/bubududu/asas.png";
+import img2 from "@/assets/bubududu/asasc.jpg";
+import img3 from "@/assets/bubududu/asasd.png";
+import img4 from "@/assets/bubududu/ascasxx.jpg";
+import img5 from "@/assets/bubududu/asdads.jpg";
+import img6 from "@/assets/bubududu/asdas.png";
+import img7 from "@/assets/bubududu/asdasxas.jpg";
+import img8 from "@/assets/bubududu/asonas.png";
+import img9 from "@/assets/bubududu/aspas.jpg";
+import img10 from "@/assets/bubududu/huhsdsd.jpg";
+import img11 from "@/assets/bubududu/images.jpg";
+import img12 from "@/assets/bubududu/pansda.jpg";
+import img13 from "@/assets/bubududu/st,small,507x507-pad,600x600,f8f8f8.u2.jpg";
 
-const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15];
+const photos = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13];
 
 interface PhotoColumnProps {
   images: string[];

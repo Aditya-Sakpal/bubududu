@@ -42,7 +42,7 @@ const BackgroundMusic = ({ isPlaying }: BackgroundMusicProps) => {
       <audio
         ref={audioRef}
         preload="auto"
-        src="/audio/I_Think_They_Call_This_Love_Cover.mp3"
+        src="/audio/Atif_Aslam_Shreya_Goshal_-_Jeene_Laga_Hoon_(mp3.pm).mp3"
       />
       
       {/* Mute toggle button - only show when playing */}
